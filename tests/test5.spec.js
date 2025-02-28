@@ -45,15 +45,14 @@ describe('Calculator Tests', function () {
       await driver.quit();
     }
   });
-  it('test5', async function() {
+  it('test1', async function() {
     await driver.get('http://localhost:8000/')
-    await driver.manage().window().setRect({ width: 762, height: 952 })
-    await driver.findElement(By.css("li:nth-child(2) > .icon")).click()
+    await driver.manage().window().setRect({ width: 1514, height: 966 })
     await driver.findElement(By.id("num1")).click()
-    await driver.findElement(By.id("num1")).sendKeys("7")
-    await driver.findElement(By.id("num2")).sendKeys("e")
-    await driver.findElement(By.css("button:nth-child(2)")).click()
+    await driver.findElement(By.id("num1")).sendKeys("9")
+    await driver.findElement(By.id("num2")).sendKeys("2")
     await driver.findElement(By.css("button:nth-child(1)")).click()
+    await driver.findElement(By.css("button:nth-child(2)")).click()
     await driver.findElement(By.css("button:nth-child(3)")).click()
   })
 })
