@@ -45,7 +45,7 @@ describe('Calculator Tests', function () {
       await driver.quit();
     }
   });
-  it('test1', async function() {
+  it('test4', async function() {
     await driver.get('http://localhost:8000/')
     await driver.manage().window().setRect({ width: 1514, height: 966 })
     await driver.findElement(By.id("num1")).click()
