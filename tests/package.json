@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "mocha": "^11.1.0"
+    "mocha": "^11.1.0",
+    "selenium-webdriver": "^4.29.0"
   },
   "name": "tc3004b_101_qa",
   "version": "1.0.0",
