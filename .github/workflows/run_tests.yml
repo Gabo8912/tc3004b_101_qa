@@ -17,7 +17,7 @@ jobs:
         with:
           chrome-version: 120
           install-dependencies: true
-      - run: npm ci  
+      - run: npm install  
       - run: |
           cd src
           python3 -m http.server 8000 &
@@ -25,7 +25,7 @@ jobs:
           curl http://localhost:8000
           cd ..
           cd tests
-          npm test  # Runs Mocha using the package.json script
+          npm tests  # Runs Mocha using the package.json script
       - uses: actions/upload-artifact@v4
         if: always()
         with:
